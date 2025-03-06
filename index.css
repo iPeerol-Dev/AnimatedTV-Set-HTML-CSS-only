@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 800px;
+    height: 500px;
+    border: 5px solid black;
+    margin: 150px auto;
+    position: relative;
+}
+
+.left-speaker{
+    width: 100px;
+    height: 200px;
+    background-color: black;
+    position: relative;
+    left: 60px;
+    top: 100px;
+
+}
+
+.left-sterio{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+
+.left-woofer{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    animation: leftwoofer 1s 1s ease infinite;
+    transition: 2s;
+}
+@keyframes leftwoofer{
+    0%{transform: translateY(0px);}
+    25%{transform: translateX(2.5px);}
+    50%{transform: translateY(2px);}
+    75%{transform: translateX(-1px);}
+    100%{transform: translateY(0px);}
+}
+
+.left-woofer:hover{
+    background-color: lightgreen;
+    transition: all 3s ease-in-out;
+}
+
+.right-speaker{
+    width: 100px;
+    height: 200px;
+    background-color: black;
+    position: relative;
+    left: 630px;
+    bottom: 100px;
+}
+
+.right-sterio{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+
+.right-woofer{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    animation: rightwoofer 1s 1s  ease infinite;
+    transition: 2s;
+}
+
+@keyframes rightwoofer{
+    0%{transform: translateY(0px);}
+    25%{transform: translateX(2.5px);}
+    50%{transform: translateY(2px);}
+    75%{transform: translateX(-1px);}
+    100%{transform: translateY(0px);}
+}
+
+.right-woofer:hover{
+    background-color: lightgreen;
+    transition: all 3s ease-in-out;
+}
+
+.tv{
+    width: 300px;
+    height: 160px;
+    border: 15px solid black;
+    position: absolute;
+    left: 250px;
+    top: 100px;
+    background-color: #88D6FD;
+}
+
+.tv-stand{
+    width: 30px;
+    height: 20px;
+    background-color: black;
+    position: absolute;
+    left: 125px;
+    top: 140px;
+}
+
+.tv-base{
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: -36px;
+}
+
+.stadium{
+    position: relative;
+    right: 264px;
+    top: 285px;
+}
+.pitch{
+    position: absolute;
+    left: 264px;
+    height: 100px;
+    width: 272px;
+    bottom: 151px;
+}
+
+.right-player{
+    position: absolute;
+    left: 495px;
+    width: 40px;
+    bottom: 155px;
+}
+
+.left-player{
+    position: absolute;
+    left: 270px;
+    width: 40px;
+    bottom: 155px;
+}
+
+.ball{
+    position: absolute;
+    left: 320px;
+    width: 20px;
+    bottom: 155px;
+    animation: ball 2.5s  linear infinite;
+}
+
+@keyframes ball {
+    0%{transform: translateX(0px);}
+    100%{transform: translateX(150px);}
+}
